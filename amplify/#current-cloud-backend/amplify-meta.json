@@ -1,0 +1,63 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-studio-staging-71211-authRole",
+      "UnauthRoleArn": "arn:aws:iam::304975792196:role/amplify-studio-staging-71211-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::304975792196:role/amplify-studio-staging-71211-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-studio-staging-71211-deployment",
+      "UnauthRoleName": "amplify-studio-staging-71211-unauthRole",
+      "StackName": "amplify-studio-staging-71211",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:304975792196:stack/amplify-studio-staging-71211/eca9c9d0-995a-11ed-b50c-0e356fd82b95",
+      "AmplifyAppId": "d32m8xl97ngnw1"
+    }
+  },
+  "auth": {
+    "studio": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "signupAttributes": [
+          "NICKNAME"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "ap-northeast-1_L0ZEU5s3M",
+        "AppClientIDWeb": "7droeur8gp403iocbhtl6seqqu",
+        "AppClientID": "1dq5jl7rtdrq0j4bm7ttfkf15d",
+        "IdentityPoolId": "ap-northeast-1:4b2b9372-860d-4e07-b2d0-8d3150a3c4f5",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-1:304975792196:userpool/ap-northeast-1_L0ZEU5s3M",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "studio"
+      },
+      "lastPushTimeStamp": "2023-01-21T07:54:30.625Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-studio-staging-71211-deployment/amplify-cfn-templates/auth/studio-cloudformation-template.json",
+        "logicalId": "authstudio"
+      },
+      "lastPushDirHash": "w8gF04fCrAZVZsHmarY3amUibYM="
+    }
+  }
+}
